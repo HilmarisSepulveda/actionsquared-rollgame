@@ -1,0 +1,10 @@
+.roll-score-box {
+  background-color: var(--my_secondary);
+}
+
+.roll-btn {
+  background-color: var(--my_warning);
+  border-radius: 50%;
+  width:8rem;
+  height: 8rem;
+}

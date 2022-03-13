@@ -1,0 +1,66 @@
+
+<div class="row">
+<div class="col-4 roll-score-box">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Rolls</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let r of player.rolls">
+        <th scope="row">{{r.rollNumber}}</th>
+        <td>{{r.value}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+<div class="col-8 ">
+  <div class="row">
+    <div class="col">
+      <h3>Roll #: {{game.rollCount}}</h3>
+    </div>
+    <div class="col">
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Power Up
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" (click)="rollOdd()">Odd Number</a></li>
+          <li><a class="dropdown-item" (click)="rollEven()">Even Number</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Score</th>
+        <th scope="col">Roll</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{player.currentScore}}</td>
+        <td>{{currentRoll.value}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</div>
+
+<div class="row d-flex justify-content-center">
+
+<div class="col-4"></div>
+<div class="col d-flex justify-content-center">
+  <button class="roll-btn" (click)="rollAction()">Roll</button>
+</div>
+
+
+</div>

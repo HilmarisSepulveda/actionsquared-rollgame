@@ -1,0 +1,68 @@
+
+/* Color scheme */
+:root {
+  --my_primary: #284B63;
+  --my_secondary: #3C6E71;
+  --my_warning: #e9c46a;
+  --my_danger: #D62839;
+  --my_accent: #F6AA1C;
+  --my_dark:#353535;
+  --my_light: #D7DEDC;
+}
+
+.color_white {
+  color: white;
+}
+
+.color_primary {
+  color: var(--my_primary);
+}
+
+.color_secondary {
+  color: var(--my_secondary);
+}
+
+.color_warning {
+  color: var(--my_warning);
+}
+
+.color_danger {
+  color: var(--my_danger);
+}
+
+.color_accent {
+  color: var(--my_accent);
+}
+
+.bkg_color_white {
+  background-color: white;
+}
+
+.bkg_primary {
+background-color: var(--my_primary);
+}
+
+.bkg_secondary {
+background-color: var(--my_secondary);
+}
+
+.bkg_warning {
+background-color: var(--my_warning);
+}
+
+.bkg_danger {
+background-color: var(--my_danger);
+}
+
+.bkg_accent {
+background-color: var(--my_accent);
+}
+
+body {
+  background-color: var(--my_light);
+}
+
+h1, h2, h3, p {
+  color: white;
+}
+

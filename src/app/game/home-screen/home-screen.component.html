@@ -1,0 +1,14 @@
+<div class="container bkg_primary home-container">
+
+<h1>Let's play a game!</h1>
+<h2>How should we call you?</h2>
+<br>
+<input class="name-input" [(ngModel)]="playerName">
+<h3 *ngIf="!validName">{{emptyNameMessage}}</h3>
+<br>
+<button class="btn btn-primary play-button" (click)="onClick_Play()">Play</button>
+
+<h1>{{playerName}}</h1>
+
+
+</div>
